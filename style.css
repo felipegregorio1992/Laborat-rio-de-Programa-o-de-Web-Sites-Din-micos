@@ -1,0 +1,121 @@
+
+
+#campofala{  /*  css que muda o estilo da div do escolher a fala ( posição, tamanho) */
+    width: 100%; 
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+#campobotao{ /*  css que muda a div do campo dos botões (tamanho e posiçao) */
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn, #btnenviar{ /*  css que muda o estilo dos botões (tamanho e cor) */
+    width: 35%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vh;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn:hover , #btnenviar:hover{ /*  css que muda o estilo dos botões quando o mouse passa por cima  */
+    background-color: #fff; 
+    color: #000;
+}
+
+
+
+
+.content{ /*  css que muda o estilo da div do conteudo */
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#question{ /*  css que muda o estilo da div do campo de pergunta  tamanho, cor, fonte*/
+    width: 80%;
+    height: 10%;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#result{ /*  css que muda o estilo da div do campo de resposta  tamanho, cor, fonte*/
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+#voice{ /*  css que muda o estilo da div do campo de voz  tamanho, cor, fonte*/
+    height: 70%;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    border: 1px solid #000;
+    cursor: pointer;
+    
+}
+.slide-campo {  /*  Muda o tamanho e a posição do do carrossel*/
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+.slide { /*  Muda o tamanho e a posição*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+.slide img { /*  Muda o tamanho da imagem*/
+    width: 100%;
+    height: 100%;
+ 
+}
+.slide:first-child { /*  Muda a posição da imagem*/
+    left: 0;
+}
+.slide:nth-child(2) { /*  Muda a posição da imagem*/
+    left: 100%;
+}
+.slide:nth-child(3) { /*  Muda a posição da imagem*/
+    left: 200%;
+}
+.slide:nth-child(4) { /*  Muda a posição da imagem*/
+    left: -100%;
+}
+.slide:last-child { /*  Muda a posição da imagem*/
+    left: -200%;
+}
+.slide.active { /*  Muda a posição da imagem*/
+    left: 0;
+}   

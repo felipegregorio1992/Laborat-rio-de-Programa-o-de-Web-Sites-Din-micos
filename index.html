@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chat de resposta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+    <div class="content">
+        <div class="slide-campo"> <!-- ///////// aqui eu quero que o slide mude a cada 5 segundos ///////// -->
+            <div class="slide active">
+                <img src="imagens/escreva.png">  <!-- ///////// Imagem que aparece no slide ///////// -->
+            </div>
+            <div class="slide">
+                <img src="imagens/enviar.png"> 
+            </div>
+            <div class="slide">
+                <img src="imagens/resultadopesquisa.png">
+            </div>
+            <div class="slide">
+                <img src="imagens/escolherfala.png">
+            </div>
+            <div class="slide">
+                <img src="imagens/lertexto.png">
+            </div>
+        </div> <!-- ///////// Fim do carrossel ///////// -->
+        <br>
+        
+        <textarea id="result" cols="30" rows="10" disabled placeholder="resposta"></textarea> <!-- ///////// Campo com o resultado da pesquisa  ///////// -->
+    
+        <textarea id="question" placeholder="escreva a pergunta"></textarea> <!-- ///////// Campo para iniciar a pesquisa ///////// -->
+
+
+        
+        <div id="campofala">    
+            <select id="voice"></select> <!-- ///////// Botão para chamar a função de falar ///////// -->
+        </div>
+        
+        <div id="campobotao">
+            <button  id="btnenviar">enviar</button> <!-- ///////// Botão para enviar a pergunta ///////// -->
+            <button id="btn">falar</button>
+        </div>
+
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</html>
