@@ -17,7 +17,7 @@ document.getElementById('btnenviar').addEventListener('click', () => { //adicion
 })
 
 
-const OPEN_API_KEY = "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"; //chave da api
+const OPEN_API_KEY = ""; //Escreva aqui a sua chave da api
 
 function sendQuestion(){ //função para enviar a pergunta
     var sQuestion = inputQuestion.value; //pega o valor do input
